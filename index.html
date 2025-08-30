@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <title>HTML Meme Maker</title>
+  </head>
+  <body bgcolor="lightyellow" text="darkblue">
+
+    <table width="100%">
+      <tr>
+        <td align="left"><img src="sticker_2110-512x512.png" width="200"></td>
+        <td align="center">
+          <h1><font color="red" size="12">✨ Make your meme ✨</font></h1>
+        </td>
+        <td align="right"><img src="troll-face-png-for-meme-template-lzpubfdbb6.png" width="200"></td>
+      </tr>
+    </table>
+
+    <table align="center">
+      <tr>
+        <td>
+          <center>
+            <br>
+            <font size="4">Top:</font> 
+            <input value="TOP TEXT" oninput="this.nextElementSibling.innerText=this.value"><br><br>
+            <h1><font color="green">TOP TEXT</font></h1>
+
+            <input type="file" accept="image/*" onchange="this.nextElementSibling.src=URL.createObjectURL(this.files[0])"><br><br>
+            <img src="https://via.placeholder.com/500x300.png" width="400"><br><br>
+
+            <font size="4">Bottom:</font> 
+            <input value="BOTTOM TEXT" oninput="this.nextElementSibling.innerText=this.value"><br><br>
+            <h1><font color="purple">BOTTOM TEXT</font></h1>
+
+            <br>
+            <a href="data:text/plain,This%20is%20your%20meme!" download="meme.txt">
+              <button><font size="4" color="blue">Download Meme</font></button>
+            </a>
+          </center>
+        </td>
+      </tr>
+    </table>
+
+  </body>
+</html>
